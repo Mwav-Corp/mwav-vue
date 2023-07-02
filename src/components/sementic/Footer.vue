@@ -27,7 +27,7 @@
 <script>
 export default {
     name: 'Footer',
-    compnenets: {},
+    components: {},
     data() {
         return {
         };
@@ -36,6 +36,6 @@ export default {
     created() { },
     mounted() { },
     unmounted() { },
-    methods() { }
+    methods: {}
 }
 </script>

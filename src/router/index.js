@@ -4,6 +4,7 @@ import PortfolioView from '@/views/PortfolioView.vue';
 import AboutView from '@/views/AboutView.vue';
 import TeamView from '@/views/TeamView.vue';
 import ContactView from '@/views/ContactView.vue';
+import SignUpView from '@/views/SignUpView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: ContactView
+    },
+    {
+      path: '/sign-up',
+      name: 'signUp',
+      component: SignUpView
     }
   ]
 });

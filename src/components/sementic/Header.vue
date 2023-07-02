@@ -25,14 +25,20 @@
                     </li>
                 </ul>
             </div>
+
+            <SignToggle></SignToggle>
         </div>
     </nav>
 </template>
 
 <script>
+import SignToggle from '@/components/authentication/SignToggle.vue';
+
 export default {
     name: 'Header',
-    compnenets: {},
+    components: {
+        SignToggle
+    },
     data() {
         return {
         };
@@ -41,6 +47,6 @@ export default {
     created() { },
     mounted() { },
     unmounted() { },
-    methods() { }
+    methods: {}
 }
 </script>
