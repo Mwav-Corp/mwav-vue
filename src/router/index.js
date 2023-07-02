@@ -1,10 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
-import PortfolioView from '@/views/PortfolioView.vue';
-import AboutView from '@/views/AboutView.vue';
-import TeamView from '@/views/TeamView.vue';
-import ContactView from '@/views/ContactView.vue';
 import SignUpView from '@/views/SignUpView.vue';
+
+import SementicLayout from '@/layouts/SementicLayout.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,31 +10,37 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
+      meta: { layout: SementicLayout },
       component: HomeView
     },
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: PortfolioView
+      meta: { layout: SementicLayout },
+      component: () => import('@/views/PortfolioView.vue')
     },
     {
       path: '/about',
       name: 'about',
-      component: AboutView
+      meta: { layout: SementicLayout },
+      component: () => import('@/views/AboutView.vue')
     },
     {
       path: '/team',
       name: 'team',
-      component: TeamView
+      meta: { layout: SementicLayout },
+      component: () => import('@/views/TeamView.vue')
     },
     {
       path: '/contact',
       name: 'contact',
-      component: ContactView
+      meta: { layout: SementicLayout },
+      component: () => import('@/views/ContactView.vue')
     },
     {
       path: '/sign-up',
       name: 'signUp',
+      meta: { layout: SementicLayout },
       component: SignUpView
     }
   ]

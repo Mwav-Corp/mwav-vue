@@ -1,8 +1,8 @@
 <!-- 헤더 -->
 <template>
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-primary" @click="moveToSignUp">Sign In</button>
-        <button type="button" class="btn btn-primary">Sign Up</button>
+        <button type="button" class="btn btn-primary">Sign In</button>
+        <button type="button" class="btn btn-primary" @click="moveToSignUpForm">Sign Up</button>
     </div>
 </template>
 
@@ -23,9 +23,9 @@ export default {
     mounted() { },
     unmounted() { },
     methods: {
-        moveToSignUp() {
+        moveToSignUpForm() {
             this.$router.push({
-                path: '/sign-in',
+                path: '/sign-up',
                 name: 'signUp'
             });
         }
