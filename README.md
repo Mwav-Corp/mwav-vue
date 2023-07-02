@@ -34,3 +34,4 @@ npm run build
 npm run lint
 ```
 Template project for mwav vue
+The boiler-plate for mwav vue project
