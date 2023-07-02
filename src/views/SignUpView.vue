@@ -1,14 +1,9 @@
 <template>
-    <SignUpForm></SignUpForm>
+    <section class="page-section"></section>
 </template>
 
 <script>
-import SignUpForm from '@/components/authentication/SignUpForm.vue';
-
 export default {
-    name: 'SignUpView',
-    components: {
-        SignUpForm
-    }
+    name: 'SignUpView'
 }
 </script>

@@ -1,8 +1,8 @@
 <!-- 헤더 -->
 <template>
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-primary">Sign In</button>
         <button type="button" class="btn btn-primary" @click="moveToSignUpForm">Sign Up</button>
+        <button type="button" class="btn btn-primary">Sign In</button>
     </div>
 </template>
 
